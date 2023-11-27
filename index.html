@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Estilo no DOM</title>
+    <style>
+        #paragrafo {
+            font-size: 16px;
+            color: black;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .destaque {
+            font-size: 20px;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Manipulação de Estilo no DOM</h1>
+        
+        <p id="paragrafo">
+            A manipulação de estilos da DOM em JavaScript é uma parte essencial da criação de páginas web dinâmicas. O objeto `style` de um elemento permite acessar e modificar suas propriedades de estilo.
+            A manipulação do DOM (Document Object Model) é uma habilidade essencial no desenvolvimento web com JavaScript. O DOM representa a estrutura em forma de árvore de um documento HTML e permite que você altere dinamicamente os elementos da página, criando uma experiência interativa para os usuários. Neste artigo, exploraremos conceitos básicos de manipulação do DOM e como tornar uma página mais interativa usando JavaScript.</p>
+        
+        <button onclick="alterarEstilo()">Alterar Estilo</button>
+    </div>
+
+    <script>
+        function alterarEstilo() {
+            var paragrafo = document.getElementById("paragrafo");
+
+            // Adiciona a classe 'destaque' para alterar o estilo
+            paragrafo.classList.add("destaque");
+
+            // Desabilita o botão após ser clicado para evitar cliques repetidos
+            document.querySelector("button").disabled = true;
+
+            // Define um tempo limite para remover a classe 'destaque' e reabilitar o botão
+            setTimeout(function() {
+                paragrafo.classList.remove("destaque");
+                document.querySelector("button").disabled = false;
+            }, 1000); // 1000 milissegundos (1 segundo)
+        }
+    </script>
+
+</body>
+</html>
