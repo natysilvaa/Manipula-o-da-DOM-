@@ -1,7 +1,8 @@
 # Manipula-o-da-DOM-
 
  Esse código HTML cria uma página web básica que inclui um cabeçalho (head) com metadados e um corpo (body) com conteúdo visível para o usuário. O JavaScript é vinculado através de um arquivo externo chamado script.js, e o CSS é vinculado através de um arquivo externo chamado styles.css. A página contém um botão que, quando clicado, aciona uma função chamada alterarEstilo().
- No código fornecido, uma página web básica foi criada com HTML, estilizada usando CSS e interatividade adicionada através de JavaScript. Aqui está um resumo do que foi criado em cada parte do código:
+ No código fornecido, uma página web básica foi criada com HTML, estilizada usando CSS e interatividade adicionada através de JavaScript.
+ Aqui está um resumo do que foi criado em cada parte do código:
 
 1. **HTML (index.html):**
    - Uma estrutura básica da página HTML foi criada.
